@@ -1,0 +1,37 @@
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;;
+    }
+
+    .social {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding-left: 3%;
+        .icon {
+            font-size: 32px;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+
+
+       
+        
+
+        
+    }
+}
