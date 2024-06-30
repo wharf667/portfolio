@@ -4,12 +4,43 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Landng from './components/landing/Landng';
+import Nav from './components/nav/Nav';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Landng />,
+  },
+  {
+    path: "/skills",
+    element: <h1>Skills</h1>,
+  },
+  {
+    path: "/projects",
+    element: <h1>Projects</h1>,
+  },
+  {
+    path: "/contact",
+    element: <h1>Contact</h1>,
+  },
+]);
+
+const AppNavigation = () => (
+  <>
+    <Nav />
+    <RouterProvider router={router} />
+  </>
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
-    <App />
+    <AppNavigation />
   </React.StrictMode>
 );
 
