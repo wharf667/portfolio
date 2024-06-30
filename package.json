@@ -15,14 +15,14 @@
     "sass": "^1.77.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://wharf667.github.io/portfolio",
+  "homepage": "https://wharf667.github.io/portfolio/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
